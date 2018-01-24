@@ -4,4 +4,6 @@ _site/
 sapcommericalprojects.sublime-project
 sapcommericalprojects.sublime-workspace
 .DS_Store
+Gemfile.lock
+
 

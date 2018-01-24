@@ -1,7 +1,8 @@
 theme: jekyll-theme-slate
-title: [SAP Commercial Project Assembly]
-description: [Using SAP Commercial Project Management 2.0 to enable the management of commercial projects that require light assembly/manufacturing, instead of the more complex SAP Production Planning solutions.]
+title: [SAP Commercial Project Management]
+description: [Using SAP Commercial Project Management 2.0 to enable the management of commercial projects that require light assembly/manufacturing as alternative to traditional production planning process.]
 show_downloads: [false]
 google_analytics:
 github: [metadata]
+repository: [davebeach]/[sapcommercialprojects]
 
