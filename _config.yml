@@ -1,8 +1,10 @@
-title: SAP Commercial Project Management
-description: [Using SAP Commercial Project Management to enable the management of commercial]
-show_downloads: [false]
+theme: "jekyll-theme-slate"
+title: "SAP Commercial Project Management"
+description: "Using SAP Commercial Project Management to enable the management of prjs  that require light assembly"
+show_downloads: false
 google_analytics:
 github: [metadata]
-repository: [ketchpartners]/[sapcommercialprojects]
-theme: jekyll-theme-slate
-exclude: ['Rakefile', 'README.md', 'config.rb']
+repository: davebeach/sapcommercialprojects
+plugins:
+  - "jekyll-github-metadata"
+  - "jekyll-watch"
