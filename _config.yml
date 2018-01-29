@@ -1,8 +1,10 @@
-theme: jekyll-theme-slate
-title: [SAP Commercial Project Management]
-description: [Using SAP Commercial Project Management 2.0 to enable the management of commercial projects that require light assembly/manufacturing as alternative to traditional production planning process.]
-show_downloads: [false]
+theme: "jekyll-theme-slate"
+title: "SAP Commercial Project Management"
+description: "Using SAP Commercial Project Management to enable the management of prjs  that require light assembly"
+show_downloads: false
 google_analytics:
 github: [metadata]
-repository: [davebeach]/[sapcommercialprojects]
-
+repository: davebeach/sapcommercialprojects
+plugins:
+  - "jekyll-github-metadata"
+  - "jekyll-watch"
