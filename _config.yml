@@ -2,7 +2,7 @@ theme: "jekyll-theme-slate"
 title: "SAP Commercial Project Management"
 description: "Using SAP Commercial Project Management to enable the management of prjs  that require light assembly"
 show_downloads: false
-google_analytics:
+google_analytics: UA-113301314-1
 github: [metadata]
 repository: davebeach/sapcommercialprojects
 plugins:
