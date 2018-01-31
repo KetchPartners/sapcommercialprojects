@@ -21,8 +21,8 @@ defaults:
     values:
       layout: "default"
       page.author: "David Beach"
-logo_file: "ketch.png" 
-logo2_file: "sap-partner-logo.png"
+logo_file: "/ketch.png" 
+logo2_file: "/sap-partner-logo.png"
 safe:                 false
 include:              [".htaccess"]
 exclude:              ["Gemfile", "Gemfile.lock", "bower_components", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
