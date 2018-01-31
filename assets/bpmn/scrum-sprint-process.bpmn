@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.11.3">
+  <bpmn:collaboration id="Collaboration_032mny6">
+    <bpmn:participant id="Participant_0hd1s3f" processRef="Process_1" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1" isExecutable="true">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_0pvklcy" name="Scrum Master">
+        <bpmn:flowNodeRef>Task_0vtgujw</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1hvpioi</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1608mbp</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_11i5ljh</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_09oyhfy</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1deblxz</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0nzuw9v</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0swwcjq</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1igzv9j</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0kbygza</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0ie3ek0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0q36mo5</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_1mjmdom" name="Project Resource">
+        <bpmn:flowNodeRef>Task_1611xqz</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0lmbvfq</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_08olpog</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0and9i4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1ms0vy1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_05tuueo</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_037gq9t</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1m49c8z</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_055s6g9</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0pg72fj</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0zjchz9</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_14y22f1</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_02uimbr" name="Business SME">
+        <bpmn:flowNodeRef>Task_0w9jzfy</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0paiicc</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0muxmn4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_04yhc2q</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1cqnhr5</bpmn:flowNodeRef>
+        <bpmn:childLaneSet xsi:type="bpmn:tLaneSet" />
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_1soi4gs" sourceRef="StartEvent_1" targetRef="Task_0vtgujw" />
+    <bpmn:sequenceFlow id="SequenceFlow_1qv4dpo" sourceRef="Task_0vtgujw" targetRef="Task_1611xqz" />
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>SequenceFlow_1soi4gs</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Task_0vtgujw" name="Project Backlog EPIC/Collection Level">
+      <bpmn:incoming>SequenceFlow_1soi4gs</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1qv4dpo</bpmn:outgoing>
+      <bpmn:property id="Property_0m37az9" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_08q8aoh">
+        <bpmn:sourceRef>DataObjectReference_0ryk501</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0m37az9</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataInputAssociation id="DataInputAssociation_0jzyy28">
+        <bpmn:sourceRef>DataObjectReference_1q099bq</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0m37az9</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    </bpmn:task>
+    <bpmn:dataObjectReference id="DataObjectReference_0ryk501" dataObjectRef="DataObject_1g81xsn" />
+    <bpmn:dataObject id="DataObject_1g81xsn" />
+    <bpmn:dataObjectReference id="DataObjectReference_1q099bq" dataObjectRef="DataObject_1fu9jb7" />
+    <bpmn:dataObject id="DataObject_1fu9jb7" />
+    <bpmn:task id="Task_1611xqz" name="Backlog Populated with Detail Tasks">
+      <bpmn:incoming>SequenceFlow_1qv4dpo</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_07in9in</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_0lmbvfq" name="Sprint Scope Decided">
+      <bpmn:incoming>SequenceFlow_17tc8tx</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_19no44k</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_1hvpioi" name="Move Backlog Items to Sprint Board">
+      <bpmn:incoming>SequenceFlow_07in9in</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_17tc8tx</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_1608mbp" name="For Each Collection Explode Out Tasks">
+      <bpmn:incoming>SequenceFlow_19no44k</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0krhtxh</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_08olpog" name="Complete Task ">
+      <bpmn:outgoing>SequenceFlow_1t0wauz</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_11i5ljh" name="Move to Done">
+      <bpmn:incoming>SequenceFlow_1t0wauz</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_11vbwql</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_11vbwql" sourceRef="Task_11i5ljh" targetRef="Task_09oyhfy" />
+    <bpmn:task id="Task_09oyhfy" name="Move Started Tasks to In Process and Update">
+      <bpmn:incoming>SequenceFlow_11vbwql</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_0krhtxh</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_0zu5nm0</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_174n2g5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_1deblxz" name="Move to Icebox">
+      <bpmn:incoming>SequenceFlow_05akdf3</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_05akdf3" sourceRef="Task_1m49c8z" targetRef="Task_1deblxz" />
+    <bpmn:sequenceFlow id="SequenceFlow_1t0wauz" sourceRef="Task_08olpog" targetRef="Task_11i5ljh" />
+    <bpmn:sequenceFlow id="SequenceFlow_174n2g5" sourceRef="Task_09oyhfy" targetRef="Task_0and9i4" />
+    <bpmn:task id="Task_0w9jzfy" name="Prepare Use Case Stories with Data" />
+    <bpmn:task id="Task_0paiicc" name="Finalize Scope Requirements" />
+    <bpmn:sequenceFlow id="SequenceFlow_07in9in" sourceRef="Task_1611xqz" targetRef="Task_1hvpioi" />
+    <bpmn:sequenceFlow id="SequenceFlow_17tc8tx" sourceRef="Task_1hvpioi" targetRef="Task_0lmbvfq" />
+    <bpmn:sequenceFlow id="SequenceFlow_19no44k" sourceRef="Task_0lmbvfq" targetRef="Task_1608mbp" />
+    <bpmn:sequenceFlow id="SequenceFlow_0krhtxh" sourceRef="Task_1608mbp" targetRef="Task_09oyhfy" />
+    <bpmn:task id="Task_0and9i4" name="Create Branch GITHUB">
+      <bpmn:incoming>SequenceFlow_174n2g5</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_0zi0koc</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:task id="Task_1ms0vy1" name="Update Work Effort, Risks, Issues">
+      <bpmn:incoming>SequenceFlow_053r5vg</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0zu5nm0</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_0zu5nm0" sourceRef="Task_1ms0vy1" targetRef="Task_09oyhfy" />
+    <bpmn:task id="Task_0nzuw9v" name="Monitor Burn Rate">
+      <bpmn:outgoing>SequenceFlow_1kce36j</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_05tuueo" name="Burn Rate Issues ICEBOX scope">
+      <bpmn:incoming>SequenceFlow_1kce36j</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1kce36j" sourceRef="Task_0nzuw9v" targetRef="Task_05tuueo" />
+    <bpmn:task id="Task_0swwcjq" name="GITHUB update issues form KANBAN">
+      <bpmn:outgoing>SequenceFlow_1x8pto2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_1igzv9j" name="Tag Completed Issues with Release TAGS">
+      <bpmn:incoming>SequenceFlow_1x8pto2</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0drfa2k</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_037gq9t" name="Work on Issue In Branch">
+      <bpmn:outgoing>SequenceFlow_0zi0koc</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_0zi0koc" sourceRef="Task_037gq9t" targetRef="Task_0and9i4" />
+    <bpmn:task id="Task_1m49c8z" name="Immediate Mention Roadblock">
+      <bpmn:outgoing>SequenceFlow_05akdf3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_055s6g9" name="Unit Test Within Branch">
+      <bpmn:outgoing>SequenceFlow_053r5vg</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_053r5vg" sourceRef="Task_055s6g9" targetRef="Task_1ms0vy1" />
+    <bpmn:task id="Task_0pg72fj" name="Merge Branches for Release">
+      <bpmn:incoming>SequenceFlow_0drfa2k</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1wj16yw</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1wj16yw" sourceRef="Task_0pg72fj" targetRef="Task_0zjchz9" />
+    <bpmn:sequenceFlow id="SequenceFlow_1xvf6s8" sourceRef="Task_0zjchz9" targetRef="Task_0muxmn4" />
+    <bpmn:task id="Task_0muxmn4" name="User Acceptance Testing">
+      <bpmn:incoming>SequenceFlow_1xvf6s8</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1y9l28o</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1y9l28o" sourceRef="Task_0muxmn4" targetRef="Task_04yhc2q" />
+    <bpmn:task id="Task_0zjchz9" name="Automated Testing">
+      <bpmn:incoming>SequenceFlow_1wj16yw</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1xvf6s8</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1x8pto2" sourceRef="Task_0swwcjq" targetRef="Task_1igzv9j" />
+    <bpmn:sequenceFlow id="SequenceFlow_0drfa2k" sourceRef="Task_1igzv9j" targetRef="Task_0pg72fj" />
+    <bpmn:task id="Task_0kbygza" name="15 min daily meeting" />
+    <bpmn:task id="Task_04yhc2q" name="Log Defects">
+      <bpmn:incoming>SequenceFlow_1y9l28o</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:task id="Task_0ie3ek0" name="Conduct Sprint Review">
+      <bpmn:incoming>SequenceFlow_0k56yps</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_1pp4gyi</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_0h4f84z</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_171joyj</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:task id="Task_1cqnhr5" name="Participate in Sprint Reviews and Approve Next Sprint Scope">
+      <bpmn:outgoing>SequenceFlow_0k56yps</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_0k56yps" sourceRef="Task_1cqnhr5" targetRef="Task_0ie3ek0" />
+    <bpmn:sequenceFlow id="SequenceFlow_1pp4gyi" sourceRef="Task_14y22f1" targetRef="Task_0ie3ek0" />
+    <bpmn:sequenceFlow id="SequenceFlow_0h4f84z" sourceRef="Task_14y22f1" targetRef="Task_0ie3ek0" />
+    <bpmn:sequenceFlow id="SequenceFlow_171joyj" sourceRef="Task_14y22f1" targetRef="Task_0ie3ek0" />
+    <bpmn:task id="Task_14y22f1" name="Sprint Reviews Participate and Resolve Problems from Sprint">
+      <bpmn:outgoing>SequenceFlow_1pp4gyi</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_0h4f84z</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_171joyj</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_0q36mo5" name="Set up Slack For Big Issues" />
+    <bpmn:association id="Association_14qya1i" sourceRef="DataObjectReference_0ryk501" targetRef="TextAnnotation_0i0uzv3" />
+    <bpmn:association id="Association_1uw1h7z" sourceRef="DataObjectReference_1q099bq" targetRef="TextAnnotation_18lbvtr" />
+    <bpmn:textAnnotation id="TextAnnotation_18lbvtr">
+      <bpmn:text>User Stories</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_0i0uzv3">
+      <bpmn:text>Requirements on Sharepoint</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1tjltss" sourceRef="Task_0w9jzfy" targetRef="TextAnnotation_18lbvtr" />
+    <bpmn:association id="Association_1e1ekrk" sourceRef="Task_0paiicc" targetRef="TextAnnotation_0i0uzv3" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_032mny6">
+      <bpmndi:BPMNShape id="Participant_0hd1s3f_di" bpmnElement="Participant_0hd1s3f">
+        <dc:Bounds x="-20" y="-65" width="1690" height="590" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="74" y="16" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="47" y="52" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0vtgujw_di" bpmnElement="Task_0vtgujw">
+        <dc:Bounds x="129" y="7" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_0ryk501_di" bpmnElement="DataObjectReference_0ryk501">
+        <dc:Bounds x="100" y="101" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="118" y="154" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_1q099bq_di" bpmnElement="DataObjectReference_1q099bq">
+        <dc:Bounds x="180" y="101" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="198" y="154" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_0i0uzv3_di" bpmnElement="TextAnnotation_0i0uzv3">
+        <dc:Bounds x="68" y="368" width="100" height="42" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_18lbvtr_di" bpmnElement="TextAnnotation_18lbvtr">
+        <dc:Bounds x="179" y="374" width="99.99274099883856" height="29.997822299651567" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1611xqz_di" bpmnElement="Task_1611xqz">
+        <dc:Bounds x="276.4703832752613" y="212" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1soi4gs_di" bpmnElement="SequenceFlow_1soi4gs">
+        <di:waypoint xsi:type="dc:Point" x="109" y="37" />
+        <di:waypoint xsi:type="dc:Point" x="129" y="40" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="119" y="17" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_08q8aoh_di" bpmnElement="DataInputAssociation_08q8aoh">
+        <di:waypoint xsi:type="dc:Point" x="136" y="112" />
+        <di:waypoint xsi:type="dc:Point" x="169" y="87" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_0jzyy28_di" bpmnElement="DataInputAssociation_0jzyy28">
+        <di:waypoint xsi:type="dc:Point" x="187" y="101" />
+        <di:waypoint xsi:type="dc:Point" x="181" y="87" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1qv4dpo_di" bpmnElement="SequenceFlow_1qv4dpo">
+        <di:waypoint xsi:type="dc:Point" x="229" y="47" />
+        <di:waypoint xsi:type="dc:Point" x="326" y="47" />
+        <di:waypoint xsi:type="dc:Point" x="326" y="212" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="277.5" y="25.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_14qya1i_di" bpmnElement="Association_14qya1i">
+        <di:waypoint xsi:type="dc:Point" x="118" y="151" />
+        <di:waypoint xsi:type="dc:Point" x="118" y="368" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_1uw1h7z_di" bpmnElement="Association_1uw1h7z">
+        <di:waypoint xsi:type="dc:Point" x="201" y="151" />
+        <di:waypoint xsi:type="dc:Point" x="227" y="374" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Lane_0pvklcy_di" bpmnElement="Lane_0pvklcy">
+        <dc:Bounds x="10" y="-65" width="1660" height="231" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1mjmdom_di" bpmnElement="Lane_1mjmdom">
+        <dc:Bounds x="10" y="166" width="1660" height="189" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_02uimbr_di" bpmnElement="Lane_02uimbr">
+        <dc:Bounds x="10" y="355" width="1660" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0w9jzfy_di" bpmnElement="Task_0w9jzfy">
+        <dc:Bounds x="171.08943089430898" y="432" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1m49c8z_di" bpmnElement="Task_1m49c8z">
+        <dc:Bounds x="753" y="187" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_04yhc2q_di" bpmnElement="Task_04yhc2q">
+        <dc:Bounds x="1230.0894308943089" y="432" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0lmbvfq_di" bpmnElement="Task_0lmbvfq">
+        <dc:Bounds x="390.089430894309" y="211.79907084785134" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1hvpioi_di" bpmnElement="Task_1hvpioi">
+        <dc:Bounds x="390" y="36.799070847851326" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1608mbp_di" bpmnElement="Task_1608mbp">
+        <dc:Bounds x="509.089430894309" y="37" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_09oyhfy_di" bpmnElement="Task_09oyhfy">
+        <dc:Bounds x="622.527293844367" y="7" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0and9i4_di" bpmnElement="Task_0and9i4">
+        <dc:Bounds x="566" y="187" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1deblxz_di" bpmnElement="Task_1deblxz">
+        <dc:Bounds x="753" y="67.79907084785133" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_08olpog_di" bpmnElement="Task_08olpog">
+        <dc:Bounds x="880.6887340301975" y="212" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_11i5ljh_di" bpmnElement="Task_11i5ljh">
+        <dc:Bounds x="881" y="37" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_11vbwql_di" bpmnElement="SequenceFlow_11vbwql">
+        <di:waypoint xsi:type="dc:Point" x="881" y="64" />
+        <di:waypoint xsi:type="dc:Point" x="802" y="32.46225319396052" />
+        <di:waypoint xsi:type="dc:Point" x="723" y="32" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="841.5" y="26.73112659698026" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_05akdf3_di" bpmnElement="SequenceFlow_05akdf3">
+        <di:waypoint xsi:type="dc:Point" x="803" y="187" />
+        <di:waypoint xsi:type="dc:Point" x="803" y="148" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="818" y="161" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1t0wauz_di" bpmnElement="SequenceFlow_1t0wauz">
+        <di:waypoint xsi:type="dc:Point" x="931" y="212" />
+        <di:waypoint xsi:type="dc:Point" x="931" y="117" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="946" y="157.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_174n2g5_di" bpmnElement="SequenceFlow_174n2g5">
+        <di:waypoint xsi:type="dc:Point" x="673" y="87" />
+        <di:waypoint xsi:type="dc:Point" x="673" y="137" />
+        <di:waypoint xsi:type="dc:Point" x="616" y="137" />
+        <di:waypoint xsi:type="dc:Point" x="616" y="187" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="644.5" y="115.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_1tjltss_di" bpmnElement="Association_1tjltss">
+        <di:waypoint xsi:type="dc:Point" x="222" y="432" />
+        <di:waypoint xsi:type="dc:Point" x="223" y="404" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0paiicc_di" bpmnElement="Task_0paiicc">
+        <dc:Bounds x="60.31823461091754" y="432" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1e1ekrk_di" bpmnElement="Association_1e1ekrk">
+        <di:waypoint xsi:type="dc:Point" x="111" y="432" />
+        <di:waypoint xsi:type="dc:Point" x="111" y="410" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_07in9in_di" bpmnElement="SequenceFlow_07in9in">
+        <di:waypoint xsi:type="dc:Point" x="338" y="212" />
+        <di:waypoint xsi:type="dc:Point" x="355" y="152" />
+        <di:waypoint xsi:type="dc:Point" x="366" y="152" />
+        <di:waypoint xsi:type="dc:Point" x="405" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="360.5" y="130.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_17tc8tx_di" bpmnElement="SequenceFlow_17tc8tx">
+        <di:waypoint xsi:type="dc:Point" x="440" y="117" />
+        <di:waypoint xsi:type="dc:Point" x="440" y="212" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="455" y="157.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_19no44k_di" bpmnElement="SequenceFlow_19no44k">
+        <di:waypoint xsi:type="dc:Point" x="440" y="212" />
+        <di:waypoint xsi:type="dc:Point" x="440" y="139" />
+        <di:waypoint xsi:type="dc:Point" x="559" y="139" />
+        <di:waypoint xsi:type="dc:Point" x="559" y="117" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="499.5" y="117.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0krhtxh_di" bpmnElement="SequenceFlow_0krhtxh">
+        <di:waypoint xsi:type="dc:Point" x="609" y="64" />
+        <di:waypoint xsi:type="dc:Point" x="623" y="60" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="616" y="40" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_1ms0vy1_di" bpmnElement="Task_1ms0vy1">
+        <dc:Bounds x="633" y="270.8536585365854" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0zu5nm0_di" bpmnElement="SequenceFlow_0zu5nm0">
+        <di:waypoint xsi:type="dc:Point" x="692" y="271" />
+        <di:waypoint xsi:type="dc:Point" x="711" y="179" />
+        <di:waypoint xsi:type="dc:Point" x="673" y="179" />
+        <di:waypoint xsi:type="dc:Point" x="705" y="87" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="692" y="157.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0nzuw9v_di" bpmnElement="Task_0nzuw9v">
+        <dc:Bounds x="1022" y="37" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_05tuueo_di" bpmnElement="Task_05tuueo">
+        <dc:Bounds x="1022" y="212" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1kce36j_di" bpmnElement="SequenceFlow_1kce36j">
+        <di:waypoint xsi:type="dc:Point" x="1072" y="117" />
+        <di:waypoint xsi:type="dc:Point" x="1072" y="212" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1087" y="157.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0swwcjq_di" bpmnElement="Task_0swwcjq">
+        <dc:Bounds x="1148.1695702671313" y="37" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1igzv9j_di" bpmnElement="Task_1igzv9j">
+        <dc:Bounds x="1261.1695702671313" y="37" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_037gq9t_di" bpmnElement="Task_037gq9t">
+        <dc:Bounds x="517.9674796747968" y="271" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0zi0koc_di" bpmnElement="SequenceFlow_0zi0koc">
+        <di:waypoint xsi:type="dc:Point" x="591" y="271" />
+        <di:waypoint xsi:type="dc:Point" x="593" y="267" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="592" y="247" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_055s6g9_di" bpmnElement="Task_055s6g9">
+        <dc:Bounds x="743.9674796747968" y="271" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_053r5vg_di" bpmnElement="SequenceFlow_053r5vg">
+        <di:waypoint xsi:type="dc:Point" x="744" y="311" />
+        <di:waypoint xsi:type="dc:Point" x="733" y="311" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="738.5" y="289" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0pg72fj_di" bpmnElement="Task_0pg72fj">
+        <dc:Bounds x="1261" y="172" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0zjchz9_di" bpmnElement="Task_0zjchz9">
+        <dc:Bounds x="1261" y="261" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1wj16yw_di" bpmnElement="SequenceFlow_1wj16yw">
+        <di:waypoint xsi:type="dc:Point" x="1311" y="252" />
+        <di:waypoint xsi:type="dc:Point" x="1311" y="261" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1326" y="250" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0muxmn4_di" bpmnElement="Task_0muxmn4">
+        <dc:Bounds x="1084.9674796747968" y="375" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1xvf6s8_di" bpmnElement="SequenceFlow_1xvf6s8">
+        <di:waypoint xsi:type="dc:Point" x="1311" y="341" />
+        <di:waypoint xsi:type="dc:Point" x="1311" y="415" />
+        <di:waypoint xsi:type="dc:Point" x="1185" y="415" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1326" y="371.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1y9l28o_di" bpmnElement="SequenceFlow_1y9l28o">
+        <di:waypoint xsi:type="dc:Point" x="1185" y="415" />
+        <di:waypoint xsi:type="dc:Point" x="1208" y="415" />
+        <di:waypoint xsi:type="dc:Point" x="1208" y="472" />
+        <di:waypoint xsi:type="dc:Point" x="1230" y="472" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1223" y="437" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1x8pto2_di" bpmnElement="SequenceFlow_1x8pto2">
+        <di:waypoint xsi:type="dc:Point" x="1248" y="77" />
+        <di:waypoint xsi:type="dc:Point" x="1261" y="77" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1254.5" y="55" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0drfa2k_di" bpmnElement="SequenceFlow_0drfa2k">
+        <di:waypoint xsi:type="dc:Point" x="1311" y="117" />
+        <di:waypoint xsi:type="dc:Point" x="1311" y="172" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1326" y="137.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0kbygza_di" bpmnElement="Task_0kbygza">
+        <dc:Bounds x="254.16840882694544" y="-59.7479674796748" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0ie3ek0_di" bpmnElement="Task_0ie3ek0">
+        <dc:Bounds x="1398.5505226480836" y="37" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_14y22f1_di" bpmnElement="Task_14y22f1">
+        <dc:Bounds x="1470" y="212.2520325203252" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1cqnhr5_di" bpmnElement="Task_1cqnhr5">
+        <dc:Bounds x="1399" y="382.4680603948897" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0k56yps_di" bpmnElement="SequenceFlow_0k56yps">
+        <di:waypoint xsi:type="dc:Point" x="1449" y="382" />
+        <di:waypoint xsi:type="dc:Point" x="1449" y="117" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1464" y="242.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1pp4gyi_di" bpmnElement="SequenceFlow_1pp4gyi">
+        <di:waypoint xsi:type="dc:Point" x="1520" y="212" />
+        <di:waypoint xsi:type="dc:Point" x="1520" y="165" />
+        <di:waypoint xsi:type="dc:Point" x="1449" y="165" />
+        <di:waypoint xsi:type="dc:Point" x="1449" y="117" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1484.5" y="143.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0h4f84z_di" bpmnElement="SequenceFlow_0h4f84z">
+        <di:waypoint xsi:type="dc:Point" x="1520" y="212" />
+        <di:waypoint xsi:type="dc:Point" x="1520" y="165" />
+        <di:waypoint xsi:type="dc:Point" x="1449" y="165" />
+        <di:waypoint xsi:type="dc:Point" x="1449" y="117" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1484.5" y="143.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_171joyj_di" bpmnElement="SequenceFlow_171joyj">
+        <di:waypoint xsi:type="dc:Point" x="1520" y="212" />
+        <di:waypoint xsi:type="dc:Point" x="1520" y="165" />
+        <di:waypoint xsi:type="dc:Point" x="1449" y="165" />
+        <di:waypoint xsi:type="dc:Point" x="1449" y="117" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1484.5" y="143.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0q36mo5_di" bpmnElement="Task_0q36mo5">
+        <dc:Bounds x="427.5052264808362" y="-60" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

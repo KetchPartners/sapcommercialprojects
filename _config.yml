@@ -8,3 +8,31 @@ repository: davebeach/sapcommercialprojects
 plugins:
   - "jekyll-github-metadata"
   - "jekyll-watch"
+  - "jekyll-coffeescript"
+defaults:
+  -
+    scope:
+      path: "assets/images"
+    values:
+      image: true
+  - 
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      page.author: "David Beach"
+logo_file: "/assets/images/ketch.png" 
+logo2_file: "/assets/images/sap-partner-logo.png"
+safe:                 false
+include:              [".htaccess"]
+exclude:              ["Gemfile", "Gemfile.lock", "bower_components", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+keep_files:           [".git", ".svn"]
+encoding:             "utf-8"
+markdown_ext:         "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter: false
+
+
+
+
+
+
