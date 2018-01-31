@@ -1,0 +1,25 @@
+{
+  "name": "sapcommercialprojects",
+  "homepage": "https://github.com/KetchPartners/sapcommercialprojects",
+  "authors": [
+    "davebeach <david.beach@pro-ppm.com>"
+  ],
+  "description": "Ketch SAP CPM Projects",
+  "main": "_js/index.js",
+  "keywords": [
+    "sap",
+    "projects",
+    "commercial"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bpmn-js": "^0.26.4"
+  }
+}
