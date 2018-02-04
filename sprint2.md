@@ -61,7 +61,9 @@ The following other processes are impacted by this process:
 
 ### In Progress Prototype and Process Flow
 
-[Process flow diagram is available at this link.](https://28syaa.axshare.com/#g=1&p=process_flow)
+[High Level Process Flow Sample Use Case](https://28syaa.axshare.com/#g=2&p=use_case_narrative)
+
+[Process flow diagram is available at this link.](https://28syaa.axshare.com/#g=2&p=process_flow)
 <br />
 #### Process Flow Instructions
 Click on the process flow boxes to see sample prototype screen.
