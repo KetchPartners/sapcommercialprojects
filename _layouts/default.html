@@ -59,11 +59,15 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+  </a><br />
+  <div class="copyright-small'>
+  <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">SAP Commercial Projects
+  </span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://ketch.partners" property="cc:attributionName" rel="cc:attributionURL">Ketch Partners</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://ketchpartners.github.io/sapcommercialprojects" rel="dct:source">https://ketchpartners.github.io/sapcommercialprojects</a>.
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
+       </div>
     </div>
 
     {% if site.google_analytics %}
