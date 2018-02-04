@@ -583,7 +583,34 @@ Full-Width Styles
   background: #17865C;
 }
 
+/* --- disqus css -- */
 
+#disqus_thread {
+width: 80%;
+color: #ffffff;
+border-style: 0px solid;
+border-color: #cccccc;
+padding: 5px;
+}
+
+#dsq-content #dsq-comments .dsq-comment-body {
+color: #fff;
+background-color: #000000;
+}
+
+.dsq-reaction-body {
+color: #fff;
+}
+
+.dsq-reaction-header cite, .dsq-reaction-header span {
+color: #ccc;
+}
+
+.dsq-reaction-retweets {
+color: #ccc;
+}
+
+/*--- end disqus css --*/
 
 /*******************************************************************************
 Small Device Styles
