@@ -1,0 +1,16 @@
+# Sprint 1
+
+## Process: Customer Opportunity CRM to Project Estimate
+
+____________________________________________________________________________________________________________
+|Trigger                                         |Process End                                               | 
+|Customer Opportunity for Project Product(s).    |Project Estimate Approved and Passed to CPQ               |
+_____________________________________________________________________________________________________________
+
+
+CRM Integration
+Analysis Office Workbook Models
+Project Team Roles
+Workflow Approvals for Project Estimate
+Workflow Handoff from CRM to CPM and CPM to CPQ
+Alerts, Actions to Support Process
