@@ -78,3 +78,5 @@ Click on DISCUSS in left panel to add comment or add comment or question below. 
 ### Reference Material
 
 [SAP Help Portal - SAP S/4HANA Commercial Project Management](https://help.sap.com/viewer/0cb2ca60abdd42978337e0622f1c211f/1610%20002/en-US)
+
+[Sample Commercial Project Management Apps and User Interfaces](https://rkgtj3.axshare.com/#g=2&p=launch_pad)
