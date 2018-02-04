@@ -4,21 +4,37 @@ title: Scrum Sprint 2 Customer Opportunity to CPQ Quotation
 comments: true
 # other options
 ---
+## Sprint 2 
 
-
-
-# Sprint 2 Customer Project Opportunity to CPM Project Estimte with Workflow from CRM to CPM to CPQ
-
-## Process: Customer Opportunity CRM to Project Estimate
+### Process Flow: Customer Opportunity CRM to Project Estimate
 
 |Trigger                                         | Process End                                              | 
 |:-----------------------------------------------|:---------------------------------------------------------|
 |Customer Opportunity for Project Product(s).    |Project Estimate Approved and Passed to CPQ               |
 
+### Technical Components
+- SAP Commercial Project Management
+- SAP Customer Relationship Management - Hybris
+- SAP CPQ Quotation Management
+- SAP HANA S/4
+- SAP HANA Data Services API's (ODATA / REST / Data Streaming)
+- SAP Orchestrator Workflow and Rules Engine
+- SAP Fiori
+- Agnostic Web Apps running on HANA XSA
+- Third Party Intefaces to be determined.
+
+### Integration
+The following other processes are impacted by this process:
+- Customer Opportunity Processing
+- Customer Quotation Review and Approvals
+- Baseline Planning
+- Human Resource Employee Master
+- Network LDAP / SAP Single Sign-on
+- Customer Portal (DMZ Zone)
 
 ### Process Components
 - CRM Opportunity Has Trigger to Initiate Workflow to Start CPM and Project Estimate
-- Workflow (Sales > Project PMO > Assign Project Manager > PM Estimate > Approval > Sent Estimate to Opportunity
+- Workflow (Sales > Project PMO > Assign Project Manager > PM Estimate > Approval > Sent Estimate to Opportunity)
 - Launch Pad Role Based Worklists
 - Desktop Notifications
 - Workflow Email with Ability to Process Workflow Step
