@@ -2,10 +2,10 @@
 
 ## Process: Customer Opportunity CRM to Project Estimate
 
-____________________________________________________________________________________________________________
-|Trigger                                         |Process End                                               | 
+|Trigger                                         | Process End                                              | 
+|:-----------------------------------------------|:---------------------------------------------------------|
 |Customer Opportunity for Project Product(s).    |Project Estimate Approved and Passed to CPQ               |
-_____________________________________________________________________________________________________________
+
 
 ### Process Components
 - CRM Opportunity Has Trigger to Initiate Workflow to Start CPM and Project Estimate
