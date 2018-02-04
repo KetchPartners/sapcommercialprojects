@@ -5,7 +5,7 @@ show_downloads: false
 google_analytics: UA-113301314-1
 github: [metadata]
 repository: ketchpartners/sapcommercialprojects
-url: "https://ketchpartneers.github.io/sapcommercialprojects"
+url: "https://ketchpartners.github.io/sapcommercialprojects"
 plugins:
   - "jekyll-github-metadata"
   - "jekyll-watch"
