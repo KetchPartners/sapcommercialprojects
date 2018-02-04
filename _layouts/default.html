@@ -50,11 +50,6 @@
       </section>
     </div>
     
-    {% if page.comments %}
-       {% include disqus.html %}
-    
-    {% endif %}
-
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
@@ -74,6 +69,10 @@
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
       </script>
+    {% endif %}
+        {% if page.comments %}
+       {% include disqus.html %}
+    
     {% endif %}
   </body>
   <!-- END FORCE REUBILD COMMENT -->
