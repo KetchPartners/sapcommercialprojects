@@ -56,10 +56,12 @@ Here is a listing of the available developer oriented SAP materials.  You will n
 
 ### Application Development Hello World Samples
 #### Hello World Example Apps
-##### HTML / Javascript App Using Node.js
-##### Java Application Using Eclipse
-##### Prototype to App
-
+#### HTML / Javascript App Using Node.js
+#### Java Application Using Eclipse
+#### Prototype to App
+#### Populate HANA Tables, Serve Data Using ODATA
+#### Consume ODATA/REST in APP
+#### Vendor Agnostic App
 
 ### Development Tools
 #### SAP Web IDE
@@ -70,11 +72,17 @@ Here is a listing of the available developer oriented SAP materials.  You will n
 #### UI5 SDK
 #### Cloud SDK
 #### Process Orchestration
+#### Bower
+#### NPM
+#### Ruby
+#### Angular
+#### React
+#### Other Open Source Projects
 
 
 ### Front End Development
 
 ### Back End Development
 
-
+### Application Lifecycle Management
 
