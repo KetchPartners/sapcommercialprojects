@@ -1,8 +1,45 @@
 ---
 layout: default
 Comments: true
+# Other Options
 title: Scrum Sprint 2 Customer Opportunity to CPQ Quotation
 ---
 
-{% include_relative _includes/sprint2 %}
+# Sprint 2 Customer Project Opportunity to CPM Project Estimte with Workflow from CRM to CPM to CPQ
+
+## Process: Customer Opportunity CRM to Project Estimate
+
+|Trigger                                         | Process End                                              | 
+|:-----------------------------------------------|:---------------------------------------------------------|
+|Customer Opportunity for Project Product(s).    |Project Estimate Approved and Passed to CPQ               |
+
+
+### Process Components
+- CRM Opportunity Has Trigger to Initiate Workflow to Start CPM and Project Estimate
+- Workflow (Sales > Project PMO > Assign Project Manager > PM Estimate > Approval > Sent Estimate to Opportunity
+- Launch Pad Role Based Worklists
+- Desktop Notifications
+- Workflow Email with Ability to Process Workflow Step
+- Exception alerts, with follow up action
+- Project estimate models and level of detail
+- Project estimates will use Analysis Office Excel, Excel in SAP to do planning.
+- Probability of success used as criteria for priortization.
+- Ability from opportunity link and view CPM project estimate details.
+- Multiple estimate versions
+- Master project before a real sales has been made, to avoid clutter in S4 system.
+- Establishment of Estimate Baseline Available as CO plan version in S4.
+- Process supporting reporting requirements.
+- Project team roles.
+- Project security and authorizations requirements.
+
+
+### Decisions Required
+- What field in CRM to trigger the workflow process
+- What details of plan to pass back to opportunity (key figure can be summarized amount from estimate)
+- What is the rules of the workflow and variants for small vs larger projects.
+- Match business roles to CPM roles
+- What of process will show up in dashboards, and other "to do" worklists.
+- What CPQ needs and how will it trigger the CPQ Quotation phase?  Can the creation of the quote be automated?
+
+
 
