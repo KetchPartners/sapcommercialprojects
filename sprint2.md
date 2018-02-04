@@ -1,9 +1,11 @@
 ---
 layout: default
-Comments: true
-# Other Options
 title: Scrum Sprint 2 Customer Opportunity to CPQ Quotation
+comments: true
+# other options
 ---
+
+
 
 # Sprint 2 Customer Project Opportunity to CPM Project Estimte with Workflow from CRM to CPM to CPQ
 
