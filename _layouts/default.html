@@ -49,9 +49,9 @@
         
       </section>
     </div>
-    {% if page.comments %}
+ 
     <div id="disqus_thread"></div>
-    {% endif %}
+
     
     {{ variable | jsonify }}
     
@@ -75,10 +75,9 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-        {% if page.comments %}
+      
        {% include disqus.html %}
-    
-    {% endif %}
+
   </body>
   <!-- END FORCE REUBILD COMMENT -->
 </html>
