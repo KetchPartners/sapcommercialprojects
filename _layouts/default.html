@@ -50,7 +50,10 @@
       </section>
     </div>
     
-    {% include disqus.html %}
+    {% if page.comments %}
+       {% include disqus.html %}
+    
+    {% endif %}
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
