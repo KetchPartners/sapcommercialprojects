@@ -73,3 +73,6 @@ Please email [Mateo Carlos](mailto:mcarlos@ketch.partners) for password as proce
 The process flows follow BPMN open source standard format [BPMN](https://BPMN.io).  BPMN is code based using XML standardized format.  BPMN can be used to facilitate coding items like workflow, and BPMN can be used to faciliate automated testing.
 Click on DISCUSS in left panel to add comment or add comment or question below.  Keep questions about the software, for KM specific information please email [David Beach](mailto:dbeach@ketch.partners) or [Chris York](mailto:cyork@ketch.partners)
 
+### Reference Material
+
+[SAP Help Portal - SAP S/4HANA Commercial Project Management] (https://help.sap.com/viewer/0cb2ca60abdd42978337e0622f1c211f/1610%20002/en-US)
