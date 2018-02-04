@@ -61,7 +61,8 @@ The following other processes are impacted by this process:
 
 ### In Progress Prototype and Process Flow
 
-[Process Flow](https://28syaa.axshare.com/#g=1&p=process_flow)
-Click on the process flow boxes to see sample prototype screen.
+[Process flow diagram is available at this link.](https://28syaa.axshare.com/#g=1&p=process_flow)
+Process flow instructions - click on the process flow boxes to see sample prototype screen.
+The process flows follow BPMN open source standard format [BPMN](https://BPMN.io).  BPMN is code based using XML standardized format.  BPMN can be used to facilitate coding items like workflow, and BPMN can be used to faciliate automated testing.
 Click on DISCUSS in left panel to add comment or add comment or question below.  Keep questions about the software, for KM specific information please email [David Beach](mailto:dbeach@ketch.partners) or [Chris York](mailto:cyork@ketch.partners)
 
