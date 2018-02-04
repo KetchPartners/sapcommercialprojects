@@ -49,6 +49,9 @@
         
       </section>
     </div>
+    {% if page.comments %}
+    <div id="disqus_thread"></div>
+    {% endif %}
     
     {{ variable | jsonify }}
     
