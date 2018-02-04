@@ -11,6 +11,7 @@ plugins:
   - "jekyll-github-metadata"
   - "jekyll-watch"
   - "jekyll-coffeescript"
+  - "disqus-for-jekyll"
 defaults:
   -
     scope:
