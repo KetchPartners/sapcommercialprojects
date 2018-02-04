@@ -4,7 +4,8 @@ description: "Using SAP Commercial Project Management to enable the management o
 show_downloads: false
 google_analytics: UA-113301314-1
 github: [metadata]
-repository: davebeach/sapcommercialprojects
+repository: ketchpartners/sapcommercialprojects
+url: "https://ketchpartneers.github.io/sapcommercialprojects"
 plugins:
   - "jekyll-github-metadata"
   - "jekyll-watch"
