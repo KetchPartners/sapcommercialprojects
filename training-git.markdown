@@ -143,4 +143,4 @@ Package Managers and Remote Repositories are what enables open source to work.  
 
 ## Training Exercises
 
-Please complete the training exercises outlined [next page](https://ketchpartners.github.io/sapcommercialprojects/training-git-2.html)
+Please complete the training exercises outlined [next page](https://ketchpartners.github.io/sapcommercialprojects/training-git-exercise.markdown)
