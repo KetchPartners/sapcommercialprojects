@@ -120,5 +120,5 @@ Examples of Notable Git Forks
 
 ## Training Exercises
 
-Please complate the training exercises outlined [next page](/training-git-exercise.html)
+Please complate the training exercises outlined [next page](https://ketchpartners.github.io/sapcommercialprojects/training-git-exercise.html)
 
