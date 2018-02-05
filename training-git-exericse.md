@@ -9,14 +9,19 @@ To fully understand git, it is important to start with the command line.  GUI ve
 The easiest way to install git, it to use your package manager and your bash shell.
 
 MAC
-```
+
+
+~~~
 brew install git
-```
+
+~~~
 
 Windows
-```
+
+~~~
 https://git-scm.com/download/win
-```
+
+~~~
 
 There is also the unofficial git open source projet "Git for Windows".  This gives you a bash like CLI plus a GUI version.
 
@@ -44,17 +49,23 @@ Follow the instructions by clicking on the link in SSH and GPG sections.  This w
 Now we want to set our git config, as we now have our git user name.
 
 Replace items in [] with actual values representing you.
-```
+
+~~~
  git config --global user.name "[name]"
-```
 
-```
+~~~
+
+
+~~~
  git config --global user.email "[email address]"
-```
 
-```
+~~~
+
+
+~~~
  git config --global color.ui auto
-```
+
+~~~
 
 For windows users and others - read [Understand Line Endings and Potential Problems](https://help.github.com/articles/dealing-with-line-endings/)
 
