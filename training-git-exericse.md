@@ -28,7 +28,7 @@ There is also a desktop version available for LINUX, MAC or WINDOWS at:
 
 When complete exercise 1 please at bottom of this page, indictae exercise 1 complete by posting.  If you have questions or get stuck also post a comment.
 
-## Setup Git and Create Github Account (Exercie 2)
+## Setup Git and Create Github Account (Exercise 2)
 
 You can set up a github account via [github.com](https://www.github.com)
 
