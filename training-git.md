@@ -73,7 +73,11 @@ And/or oh-my-zsh is a more modern zsh [Oh-my-zsh](https://github.com/robbyrussel
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-### Data Integrety
+### Other Benefits of Git
+
+- Git is fast compared to other code version systems.
+- Git is accruate as it uses rock solid security methods and protocols.
+- Git is proven a better way to code, and you gain the power of open source to your project.
 
 ### Git and Open Source
 Git is open source and therefore it has replicated into many different flavors and tools to make the git process easier.  This is the key feature of open source, it enables people to take code and change it to apply to making their life easier, and also publish the change for others to make their life easier.  Git is open source and helps auto facilitate large numbers of developers modify the same code base.  Some of these changes will be pull requested back into the same git open source project.  Other changes get forked and entirely new open source products based on git.  
@@ -113,4 +117,8 @@ Examples of Notable Git Forks
 ### Open Source and Package Management
 <p>Open source is a key driver for the use of package managers within your web application.  Open source projects, have strict copyright conditions.  <dfn>Open Source</dfn>is not free software, it is a package of program code, that you have complete access to the source code under a special open source license.  This license is a copyright, that allows for copying, modifying as long as certain conditions are met.  Package managers often bundle open source code that share similar open source license requirements under one unbrella.  Without package managers it would too complex to handle dependency and license management.  The open source license often requires changes/adaptations to code to be available publically in a forked copy of the repository.  This leads to the sharing and reuse of code programs, code snippets amongst developers.</p>
 <p>Package Managers and Remote Repositories are what enables open source to work.  Without them, open source would be not worth it and too complex.  A typical modern web application can use hundreds of packages in a project.</p>
+
+## Training Exercises
+
+Please complate the training exercises outlined [next page]({{ site.baseurl }}/training-git-exercise.html"))
 
