@@ -8,6 +8,13 @@ github: [metadata]
 repository: ketchpartners/sapcommercialprojects
 url: "https://ketchpartners.github.io"
 baseurl: "/sapcommercialprojects"
+encoding: UTF-8
+kramdown:
+ input: GFM
+ hard_wrap: false
+future: true
+jailed: false
+gfm_quirks: paragraph_end
 disqus: davebeach
 plugins:
   - "jekyll-github-metadata"
