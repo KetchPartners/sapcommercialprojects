@@ -120,5 +120,5 @@ Examples of Notable Git Forks
 
 ## Training Exercises
 
-Please complate the training exercises outlined [next page]({{ site.baseurl }}/training-git-exercise.html")
+Please complate the training exercises outlined [next page]("{{ site.baseurl }}/training-git-exercise.html")
 
