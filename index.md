@@ -9,4 +9,4 @@ title: KM Commercial Projects Enterprise Process
 1. [Sprint Schedule](/sapcommercialprojects/schedule.html)
 2. @TODO[Sprint Process Flow](/sapcommercialprojects/processflow.html)
 3. [Agile and SAP](/sapcommercialprojects/agileScrum.html)
-4. @TODO[HANA XS Training](/sapcommercialprojects/hanaxs.html)
+4. HANA XS Training - git version control](/sapcommercialprojects/training -git.md)
