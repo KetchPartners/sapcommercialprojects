@@ -1,16 +1,17 @@
 ---
 layout: default
-title: Scrum Sprint 3
+title: Scrum Sprint 3 Project Templates, Customer Acceptance and Project Setup
 comments: true
 # other options
 ---
-## Sprint 2 
+## Sprint 2 Project Templates, Customer Acceptance and Project Setup
 
 ### Process Flow: Customer Opportunity CRM to Project Estimate
 
 |Trigger                                         | Process End                                              | 
 |:-----------------------------------------------|:---------------------------------------------------------|
-|Customer Opportunity for Project Product(s).    |Project Estimate Approved and Passed to CPQ               |
+|Master Data New type of product                 |Project Template Setup                                    |
+|Sales Order                                     |Project Skeleton Created Based on Templates               |
 
 ### Technical Components
 
