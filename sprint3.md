@@ -14,9 +14,15 @@ comments: true
 |Sales Order                                     |Project Skeleton Created Based on Templates               |
 
 ### Technical Components
+- Components:
+ - Project Systems
+ - Materials Management - Products
+ - Variant Configuration or Bills of Material
+ - Sales and Distribution
+ - Commercial Project Management
 
+### Process Components
 
-### Integration
 
 
 ### Process Components
