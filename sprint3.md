@@ -22,27 +22,21 @@ comments: true
  - Commercial Project Management
 
 ### Process Components
-
-
-
-### Process Components
-
-
+- Sales Products
+- Sales BOM
+- Labor Activities
+- Bill of materials
+- Project Templates
+- Project Schedule of Activitiies
 
 ### Decisions Required
 
+- A listing of all product types that are sold in a project.
+- Billing type (product sale no value add, value add labor, time and materials, fixed price etc).
+- Activities and schedule related to a product (labor, external labor etc)
 
-### In Progress Prototype and Process Flow
-
-#### Process Flow Instructions
 
 
-#### Password to Process Flow
-Please email [Mateo Carlos](mailto:mcarlos@ketch.partners) for password as process flows contain KM specific information.
-
-#### Process Flow Standards
-The process flows follow BPMN open source standard format [BPMN](https://BPMN.io).  BPMN is code based using XML standardized format.  BPMN can be used to facilitate coding items like workflow, and BPMN can be used to faciliate automated testing.
-Click on DISCUSS in left panel to add comment or add comment or question below.  Keep questions about the software, for KM specific information please email [David Beach](mailto:dbeach@ketch.partners) or [Chris York](mailto:cyork@ketch.partners)
 
 ### Reference Material
 
