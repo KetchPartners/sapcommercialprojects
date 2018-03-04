@@ -6,8 +6,8 @@ markdown: kramdown
 google_analytics: UA-113301314-1
 github: [metadata]
 repository: ketchpartners/sapcommercialprojects
-url: "https://ketchpartners.github.io"
-baseurl: "/sapcommercialprojects"
+url: "https://ketchpartners.github.io/sapcommercialprojects"
+baseurl: "/"
 encoding: UTF-8
 kramdown:
  input: GFM
